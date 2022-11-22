@@ -14,6 +14,7 @@ namespace PHAdmin.API.Entities
 
         [Required(ErrorMessage = "You should provide a letter value.")]
         [MaxLength(1)]
+        [Column(TypeName = "char(1)")]
         public string Letter { get; set; } = string.Empty;
 
         [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
@@ -30,6 +31,8 @@ namespace PHAdmin.API.Entities
 
         [Required(ErrorMessage = "You should provide a status value.")]
         [MaxLength(1)]
+        [MinLength(1)]
+        [Column(TypeName = "char(1)")]
         public string Status { get; set; } = "A";
 
 

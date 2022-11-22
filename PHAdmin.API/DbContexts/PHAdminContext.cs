@@ -3,7 +3,7 @@ using PHAdmin.API.Entities;
 
 namespace PHAdmin.API.DbContexts
 {
-    public class PHAdminContext: DbContext
+    public class PHAdminContext : DbContext
     {
         public DbSet<Apartment> Apartments { get; set; } = null!;
 
@@ -62,7 +62,76 @@ namespace PHAdmin.API.DbContexts
                    Id = 4,
                    Floor = 2,
                    Letter = "A"
-               });
+               },
+               new Apartment()
+               {
+                   Id = 5,
+                   Floor = 2,
+                   Letter = "B"
+               },
+               new Apartment()
+               {
+                   Id = 6,
+                   Floor = 2,
+                   Letter = "C"
+               },
+               new Apartment()
+               {
+                   Id = 7,
+                   Floor = 2,
+                   Letter = "D"
+               },
+               new Apartment()
+               {
+                   Id = 8,
+                   Floor = 2,
+                   Letter = "E"
+               },
+               new Apartment()
+               {
+                   Id = 9,
+                   Floor = 3,
+                   Letter = "A"
+               },
+               new Apartment()
+               {
+                   Id = 10,
+                   Floor = 3,
+                   Letter = "B"
+               },
+               new Apartment()
+               {
+                   Id =11,
+                   Floor = 3,
+                   Letter = "C"
+               },
+               new Apartment()
+               {
+                   Id = 12,
+                   Floor = 3,
+                   Letter = "D"
+               },
+               new Apartment()
+               {
+                   Id = 13,
+                   Floor = 3,
+                   Letter = "E"
+               }
+               );
+
+            modelBuilder.Entity<Role>()
+                .HasData(
+                 new Role()
+                 {
+                     Id = 1,
+                     RoleName = "Administrador"
+                 },
+                 new Role()
+                 {
+                     Id = 2,
+                     RoleName = "Copropietario"
+                 }
+                );
         }
     }
 }

@@ -12,8 +12,8 @@ using PHAdmin.API.DbContexts;
 namespace PHAdmin.API.Migrations
 {
     [DbContext(typeof(PHAdminContext))]
-    [Migration("20221121213933_seed")]
-    partial class seed
+    [Migration("20221121230809_reboot")]
+    partial class reboot
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -45,7 +45,7 @@ namespace PHAdmin.API.Migrations
                     b.Property<string>("Letter")
                         .IsRequired()
                         .HasMaxLength(1)
-                        .HasColumnType("nvarchar(1)");
+                        .HasColumnType("char(1)");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -56,7 +56,7 @@ namespace PHAdmin.API.Migrations
                     b.Property<string>("Status")
                         .IsRequired()
                         .HasMaxLength(1)
-                        .HasColumnType("nvarchar(1)");
+                        .HasColumnType("char(1)");
 
                     b.Property<DateTime?>("UpdateDate")
                         .HasColumnType("datetime2");
@@ -72,7 +72,7 @@ namespace PHAdmin.API.Migrations
                         new
                         {
                             Id = 1,
-                            CreationDate = new DateTime(2022, 11, 21, 16, 39, 33, 84, DateTimeKind.Local).AddTicks(678),
+                            CreationDate = new DateTime(2022, 11, 21, 18, 8, 9, 666, DateTimeKind.Local).AddTicks(4482),
                             Floor = 1,
                             Letter = "A",
                             Status = "A"
@@ -80,7 +80,7 @@ namespace PHAdmin.API.Migrations
                         new
                         {
                             Id = 2,
-                            CreationDate = new DateTime(2022, 11, 21, 16, 39, 33, 84, DateTimeKind.Local).AddTicks(690),
+                            CreationDate = new DateTime(2022, 11, 21, 18, 8, 9, 666, DateTimeKind.Local).AddTicks(4496),
                             Floor = 1,
                             Letter = "B",
                             Status = "A"
@@ -88,7 +88,7 @@ namespace PHAdmin.API.Migrations
                         new
                         {
                             Id = 3,
-                            CreationDate = new DateTime(2022, 11, 21, 16, 39, 33, 84, DateTimeKind.Local).AddTicks(691),
+                            CreationDate = new DateTime(2022, 11, 21, 18, 8, 9, 666, DateTimeKind.Local).AddTicks(4497),
                             Floor = 1,
                             Letter = "C",
                             Status = "A"
@@ -96,7 +96,7 @@ namespace PHAdmin.API.Migrations
                         new
                         {
                             Id = 4,
-                            CreationDate = new DateTime(2022, 11, 21, 16, 39, 33, 84, DateTimeKind.Local).AddTicks(692),
+                            CreationDate = new DateTime(2022, 11, 21, 18, 8, 9, 666, DateTimeKind.Local).AddTicks(4497),
                             Floor = 2,
                             Letter = "A",
                             Status = "A"
