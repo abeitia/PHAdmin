@@ -10,25 +10,46 @@ namespace PHAdmin.API.Controllers
     {
         private readonly ILogger<ApartmentsController> _logger;
         private readonly IMailService _mailService;
+        private readonly IPHAdminRepository _phAdminRepository;
 
-        public ApartmentsController(ILogger<ApartmentsController> logger,
+        public ApartmentsController(IPHAdminRepository phAdminRepository, 
+            ILogger<ApartmentsController> logger,
             IMailService mailService)
         {
             _logger = logger ?? throw new ArgumentNullException(nameof(logger));
             _mailService = mailService ?? throw new ArgumentNullException(nameof(mailService));
+            _phAdminRepository = phAdminRepository ?? throw new ArgumentNullException(nameof(phAdminRepository));
         }
 
 
         [HttpGet()]
-        public ActionResult<IEnumerable<ApartmentDto>> GetApartments()
+        public async Task< ActionResult<IEnumerable<ApartmentDto>>> GetApartments()
         {
             _mailService.Send("Subject","Message");
-            return new JsonResult(
-             new List<object>
+
+            var apartmentEntities = await _phAdminRepository.GetApartmentsAsync();
+
+            var results = new List <ApartmentDto>();
+            foreach (var apartmentEntity in apartmentEntities)
             {
-                new {id = 1, Name = "7-A"},
-                new {id = 2, Name = "7-B"}
-            });
+                results.Add(new ApartmentDto
+                {
+                    Id = apartmentEntity.Id,
+                    Floor = apartmentEntity.Floor,
+                    Letter = apartmentEntity.Letter,
+                    Name = apartmentEntity.Name
+
+                });
+            }
+
+            return Ok(results);
+
+            //return new JsonResult(
+            // new List<object>
+            //{
+            //    new {id = 1, Name = "7-A"},
+            //    new {id = 2, Name = "7-B"}
+            //});
         }
 
         [HttpGet("{id}")]

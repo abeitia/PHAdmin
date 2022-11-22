@@ -36,6 +36,8 @@ builder.Services.AddDbContext<PHAdminContext>(
     DbContextOptions => DbContextOptions.UseSqlServer(
         builder.Configuration["ConnectionStrings:PHAdminDBConnectionString"]));
 
+builder.Services.AddScoped<IPHAdminRepository, PHAdminRepository>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
