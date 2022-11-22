@@ -12,8 +12,8 @@ using PHAdmin.API.DbContexts;
 namespace PHAdmin.API.Migrations
 {
     [DbContext(typeof(PHAdminContext))]
-    [Migration("20221122002246_seedmoreapts")]
-    partial class seedmoreapts
+    [Migration("20221122142753_reinit3")]
+    partial class reinit3
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -72,7 +72,7 @@ namespace PHAdmin.API.Migrations
                         new
                         {
                             Id = 1,
-                            CreationDate = new DateTime(2022, 11, 21, 19, 22, 45, 967, DateTimeKind.Local).AddTicks(8581),
+                            CreationDate = new DateTime(2022, 11, 22, 9, 27, 53, 696, DateTimeKind.Local).AddTicks(4695),
                             Floor = 1,
                             Letter = "A",
                             Status = "A"
@@ -80,7 +80,7 @@ namespace PHAdmin.API.Migrations
                         new
                         {
                             Id = 2,
-                            CreationDate = new DateTime(2022, 11, 21, 19, 22, 45, 967, DateTimeKind.Local).AddTicks(8592),
+                            CreationDate = new DateTime(2022, 11, 22, 9, 27, 53, 696, DateTimeKind.Local).AddTicks(4710),
                             Floor = 1,
                             Letter = "B",
                             Status = "A"
@@ -88,7 +88,7 @@ namespace PHAdmin.API.Migrations
                         new
                         {
                             Id = 3,
-                            CreationDate = new DateTime(2022, 11, 21, 19, 22, 45, 967, DateTimeKind.Local).AddTicks(8593),
+                            CreationDate = new DateTime(2022, 11, 22, 9, 27, 53, 696, DateTimeKind.Local).AddTicks(4711),
                             Floor = 1,
                             Letter = "C",
                             Status = "A"
@@ -96,7 +96,7 @@ namespace PHAdmin.API.Migrations
                         new
                         {
                             Id = 4,
-                            CreationDate = new DateTime(2022, 11, 21, 19, 22, 45, 967, DateTimeKind.Local).AddTicks(8594),
+                            CreationDate = new DateTime(2022, 11, 22, 9, 27, 53, 696, DateTimeKind.Local).AddTicks(4712),
                             Floor = 2,
                             Letter = "A",
                             Status = "A"
@@ -104,7 +104,7 @@ namespace PHAdmin.API.Migrations
                         new
                         {
                             Id = 5,
-                            CreationDate = new DateTime(2022, 11, 21, 19, 22, 45, 967, DateTimeKind.Local).AddTicks(8594),
+                            CreationDate = new DateTime(2022, 11, 22, 9, 27, 53, 696, DateTimeKind.Local).AddTicks(4713),
                             Floor = 2,
                             Letter = "B",
                             Status = "A"
@@ -112,7 +112,7 @@ namespace PHAdmin.API.Migrations
                         new
                         {
                             Id = 6,
-                            CreationDate = new DateTime(2022, 11, 21, 19, 22, 45, 967, DateTimeKind.Local).AddTicks(8595),
+                            CreationDate = new DateTime(2022, 11, 22, 9, 27, 53, 696, DateTimeKind.Local).AddTicks(4714),
                             Floor = 2,
                             Letter = "C",
                             Status = "A"
@@ -120,7 +120,7 @@ namespace PHAdmin.API.Migrations
                         new
                         {
                             Id = 7,
-                            CreationDate = new DateTime(2022, 11, 21, 19, 22, 45, 967, DateTimeKind.Local).AddTicks(8597),
+                            CreationDate = new DateTime(2022, 11, 22, 9, 27, 53, 696, DateTimeKind.Local).AddTicks(4748),
                             Floor = 2,
                             Letter = "D",
                             Status = "A"
@@ -128,7 +128,7 @@ namespace PHAdmin.API.Migrations
                         new
                         {
                             Id = 8,
-                            CreationDate = new DateTime(2022, 11, 21, 19, 22, 45, 967, DateTimeKind.Local).AddTicks(8598),
+                            CreationDate = new DateTime(2022, 11, 22, 9, 27, 53, 696, DateTimeKind.Local).AddTicks(4749),
                             Floor = 2,
                             Letter = "E",
                             Status = "A"
@@ -136,7 +136,7 @@ namespace PHAdmin.API.Migrations
                         new
                         {
                             Id = 9,
-                            CreationDate = new DateTime(2022, 11, 21, 19, 22, 45, 967, DateTimeKind.Local).AddTicks(8598),
+                            CreationDate = new DateTime(2022, 11, 22, 9, 27, 53, 696, DateTimeKind.Local).AddTicks(4750),
                             Floor = 3,
                             Letter = "A",
                             Status = "A"
@@ -144,7 +144,7 @@ namespace PHAdmin.API.Migrations
                         new
                         {
                             Id = 10,
-                            CreationDate = new DateTime(2022, 11, 21, 19, 22, 45, 967, DateTimeKind.Local).AddTicks(8599),
+                            CreationDate = new DateTime(2022, 11, 22, 9, 27, 53, 696, DateTimeKind.Local).AddTicks(4751),
                             Floor = 3,
                             Letter = "B",
                             Status = "A"
@@ -152,7 +152,7 @@ namespace PHAdmin.API.Migrations
                         new
                         {
                             Id = 11,
-                            CreationDate = new DateTime(2022, 11, 21, 19, 22, 45, 967, DateTimeKind.Local).AddTicks(8600),
+                            CreationDate = new DateTime(2022, 11, 22, 9, 27, 53, 696, DateTimeKind.Local).AddTicks(4756),
                             Floor = 3,
                             Letter = "C",
                             Status = "A"
@@ -160,7 +160,7 @@ namespace PHAdmin.API.Migrations
                         new
                         {
                             Id = 12,
-                            CreationDate = new DateTime(2022, 11, 21, 19, 22, 45, 967, DateTimeKind.Local).AddTicks(8600),
+                            CreationDate = new DateTime(2022, 11, 22, 9, 27, 53, 696, DateTimeKind.Local).AddTicks(4757),
                             Floor = 3,
                             Letter = "D",
                             Status = "A"
@@ -168,10 +168,40 @@ namespace PHAdmin.API.Migrations
                         new
                         {
                             Id = 13,
-                            CreationDate = new DateTime(2022, 11, 21, 19, 22, 45, 967, DateTimeKind.Local).AddTicks(8601),
+                            CreationDate = new DateTime(2022, 11, 22, 9, 27, 53, 696, DateTimeKind.Local).AddTicks(4794),
                             Floor = 3,
                             Letter = "E",
                             Status = "A"
+                        });
+                });
+
+            modelBuilder.Entity("PHAdmin.API.Entities.Role", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("RoleName")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Role");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            RoleName = "Administrador"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            RoleName = "Copropietario"
                         });
                 });
 #pragma warning restore 612, 618
