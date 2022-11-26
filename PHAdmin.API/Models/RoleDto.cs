@@ -6,12 +6,9 @@ namespace PHAdmin.API.Models
     public class RoleDto
     {
         public int Id { get; set; }
-        public string RoleName { get; set; }
+        public string RoleName { get; set; }= string.Empty;
 
-        public RoleDto(IPHAdminRepository phAdminRepository,
-            IMapper mapper)
-        {
-
-        }
+        public ICollection<UserDto> Users { get; set; }
+            = new List<UserDto>();
     }
 }

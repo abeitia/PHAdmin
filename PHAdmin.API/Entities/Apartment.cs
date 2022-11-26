@@ -36,7 +36,12 @@ namespace PHAdmin.API.Entities
         public string Status { get; set; } = "A";
 
 
-
+        public Apartment( int floor, string letter )
+        {
+            Floor = floor;
+            Letter = letter;
+            Name =  floor.ToString() + '-' +letter;  
+        }
 
 
 

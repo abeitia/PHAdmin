@@ -15,12 +15,39 @@ namespace PHAdmin.API.Services
         public async Task<Apartment?> GetApartmentAsync(int apartmentId)
         {
            return await _context.Apartments
-                .Where (a => a.Id == apartmentId).FirstOrDefaultAsync();    
+                .Where (e => e.Id == apartmentId).FirstOrDefaultAsync();    
         }
 
         public async Task<IEnumerable<Apartment>> GetApartmentsAsync()
         {
-            return await _context.Apartments.OrderBy(a => a.Id).ToListAsync();
+            return await _context.Apartments.OrderBy(e => e.Id).ToListAsync();
+        }
+
+        public async Task<IEnumerable<ExpenseType>> GetExpenseTypesAsync()
+        {
+            return await _context.ExpenseTypes.OrderBy(e => e.Id).ToListAsync();
+            
+        }
+
+        public async Task<IEnumerable<Holiday>> GetHolidaysAsync()
+        {
+            return await _context.Holidays.OrderBy(e => e.DateValue).ToListAsync();
+        }
+
+        public async Task<IEnumerable<PaymentType>> GetPaymentTypesAsync()
+        {
+            return await _context.PaymentTypes.OrderBy(e => e.Id).ToListAsync();
+        }
+
+        public async Task<IEnumerable<Role>> GetRolesAsync()
+        {
+            return await _context.Roles.Include(c => c.Users)
+                .OrderBy(e => e.Id).ToListAsync();
+        }
+
+        public async Task<IEnumerable<User>> GetUsersAsync()
+        {
+            return await _context.Users.OrderBy(e => e.Name).ToListAsync();
         }
     }
 }
