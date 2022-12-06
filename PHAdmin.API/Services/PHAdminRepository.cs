@@ -23,6 +23,16 @@ namespace PHAdmin.API.Services
             return await _context.Apartments.OrderBy(e => e.Id).ToListAsync();
         }
 
+        public async Task<IEnumerable<Debt>> GetDebtsAsync()
+        {
+            return await _context.Debts.OrderBy(e => e.Id).ToListAsync();
+        }
+
+        public async Task<IEnumerable<Expense>> GetExpensesAsync()
+        {
+            return await _context.Expenses.OrderBy(e => e.Id).ToListAsync();
+        }
+
         public async Task<IEnumerable<ExpenseType>> GetExpenseTypesAsync()
         {
             return await _context.ExpenseTypes.OrderBy(e => e.Id).ToListAsync();
@@ -32,6 +42,11 @@ namespace PHAdmin.API.Services
         public async Task<IEnumerable<Holiday>> GetHolidaysAsync()
         {
             return await _context.Holidays.OrderBy(e => e.DateValue).ToListAsync();
+        }
+
+        public async Task<IEnumerable<Payment>> GetPaymentsAsync()
+        {
+            return await _context.Payments.OrderBy(e => e.Id).ToListAsync();
         }
 
         public async Task<IEnumerable<PaymentType>> GetPaymentTypesAsync()

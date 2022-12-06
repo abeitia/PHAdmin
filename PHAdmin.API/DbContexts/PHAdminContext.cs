@@ -15,6 +15,8 @@ namespace PHAdmin.API.DbContexts
         public DbSet<User> Users { get; set; } = null!;
 
         public DbSet<Payment> Payments { get; set; } = null!;
+        public DbSet<Expense> Expenses { get; set; } = null!;
+        public DbSet<Debt> Debts { get; set; } = null!;
 
         public PHAdminContext(DbContextOptions<PHAdminContext> options)
            : base(options)
@@ -142,19 +144,19 @@ namespace PHAdmin.API.DbContexts
                  }
                 );
 
-            modelBuilder.Entity<ExpenseType>()
-                .HasData(
-                 new ExpenseType("Agua")
-                 {
-                     Id = 1,
-                     ExpenseName = "Agua"
-                 },
-                 new ExpenseType("Luz")
-                 {
-                     Id = 2,
-                     ExpenseName = "Luz"
-                 }
-                );
+            //modelBuilder.Entity<ExpenseType>()
+            //    .HasData(
+            //     new ExpenseType("Agua")
+            //     {
+            //         Id = 1,
+            //         ExpenseName = "Agua"
+            //     },
+            //     new ExpenseType("Luz")
+            //     {
+            //         Id = 2,
+            //         ExpenseName = "Luz"
+            //     }
+            //    );
 
             modelBuilder.Entity<PaymentType>()
                 .HasData(

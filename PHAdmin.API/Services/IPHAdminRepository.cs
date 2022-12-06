@@ -16,5 +16,10 @@ namespace PHAdmin.API.Services
         Task<IEnumerable<Holiday>> GetHolidaysAsync();
 
         Task<IEnumerable<User>> GetUsersAsync();
+
+        Task<IEnumerable<Payment>> GetPaymentsAsync();
+
+        Task<IEnumerable<Expense>> GetExpensesAsync();
+        Task<IEnumerable<Debt>> GetDebtsAsync();
     }
 }
