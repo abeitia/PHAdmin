@@ -69,7 +69,7 @@ namespace PHAdmin.API.Migrations
                         new
                         {
                             Id = 1,
-                            CreationDate = new DateTime(2022, 12, 6, 9, 25, 10, 996, DateTimeKind.Local).AddTicks(666),
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 900, DateTimeKind.Local).AddTicks(8031),
                             Floor = 1,
                             Letter = "A",
                             Name = "1-A",
@@ -78,7 +78,7 @@ namespace PHAdmin.API.Migrations
                         new
                         {
                             Id = 2,
-                            CreationDate = new DateTime(2022, 12, 6, 9, 25, 10, 996, DateTimeKind.Local).AddTicks(688),
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 900, DateTimeKind.Local).AddTicks(8058),
                             Floor = 1,
                             Letter = "B",
                             Name = "1-B",
@@ -87,7 +87,7 @@ namespace PHAdmin.API.Migrations
                         new
                         {
                             Id = 3,
-                            CreationDate = new DateTime(2022, 12, 6, 9, 25, 10, 996, DateTimeKind.Local).AddTicks(689),
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 900, DateTimeKind.Local).AddTicks(8059),
                             Floor = 1,
                             Letter = "C",
                             Name = "1-C",
@@ -96,7 +96,7 @@ namespace PHAdmin.API.Migrations
                         new
                         {
                             Id = 4,
-                            CreationDate = new DateTime(2022, 12, 6, 9, 25, 10, 996, DateTimeKind.Local).AddTicks(690),
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 900, DateTimeKind.Local).AddTicks(8061),
                             Floor = 2,
                             Letter = "A",
                             Name = "2-A",
@@ -105,7 +105,7 @@ namespace PHAdmin.API.Migrations
                         new
                         {
                             Id = 5,
-                            CreationDate = new DateTime(2022, 12, 6, 9, 25, 10, 996, DateTimeKind.Local).AddTicks(692),
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 900, DateTimeKind.Local).AddTicks(8062),
                             Floor = 2,
                             Letter = "B",
                             Name = "2-B",
@@ -114,7 +114,7 @@ namespace PHAdmin.API.Migrations
                         new
                         {
                             Id = 6,
-                            CreationDate = new DateTime(2022, 12, 6, 9, 25, 10, 996, DateTimeKind.Local).AddTicks(693),
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 900, DateTimeKind.Local).AddTicks(8063),
                             Floor = 2,
                             Letter = "C",
                             Name = "2-C",
@@ -123,7 +123,7 @@ namespace PHAdmin.API.Migrations
                         new
                         {
                             Id = 7,
-                            CreationDate = new DateTime(2022, 12, 6, 9, 25, 10, 996, DateTimeKind.Local).AddTicks(694),
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 900, DateTimeKind.Local).AddTicks(8065),
                             Floor = 2,
                             Letter = "D",
                             Name = "2-D",
@@ -132,7 +132,7 @@ namespace PHAdmin.API.Migrations
                         new
                         {
                             Id = 8,
-                            CreationDate = new DateTime(2022, 12, 6, 9, 25, 10, 996, DateTimeKind.Local).AddTicks(696),
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 900, DateTimeKind.Local).AddTicks(8068),
                             Floor = 2,
                             Letter = "E",
                             Name = "2-E",
@@ -141,7 +141,7 @@ namespace PHAdmin.API.Migrations
                         new
                         {
                             Id = 9,
-                            CreationDate = new DateTime(2022, 12, 6, 9, 25, 10, 996, DateTimeKind.Local).AddTicks(697),
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 900, DateTimeKind.Local).AddTicks(8070),
                             Floor = 3,
                             Letter = "A",
                             Name = "3-A",
@@ -150,7 +150,7 @@ namespace PHAdmin.API.Migrations
                         new
                         {
                             Id = 10,
-                            CreationDate = new DateTime(2022, 12, 6, 9, 25, 10, 996, DateTimeKind.Local).AddTicks(698),
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 900, DateTimeKind.Local).AddTicks(8071),
                             Floor = 3,
                             Letter = "B",
                             Name = "3-B",
@@ -159,7 +159,7 @@ namespace PHAdmin.API.Migrations
                         new
                         {
                             Id = 11,
-                            CreationDate = new DateTime(2022, 12, 6, 9, 25, 10, 996, DateTimeKind.Local).AddTicks(699),
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 900, DateTimeKind.Local).AddTicks(8072),
                             Floor = 3,
                             Letter = "C",
                             Name = "3-C",
@@ -168,7 +168,7 @@ namespace PHAdmin.API.Migrations
                         new
                         {
                             Id = 12,
-                            CreationDate = new DateTime(2022, 12, 6, 9, 25, 10, 996, DateTimeKind.Local).AddTicks(700),
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 900, DateTimeKind.Local).AddTicks(8073),
                             Floor = 3,
                             Letter = "D",
                             Name = "3-D",
@@ -177,10 +177,370 @@ namespace PHAdmin.API.Migrations
                         new
                         {
                             Id = 13,
-                            CreationDate = new DateTime(2022, 12, 6, 9, 25, 10, 996, DateTimeKind.Local).AddTicks(702),
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 900, DateTimeKind.Local).AddTicks(8075),
                             Floor = 3,
                             Letter = "E",
                             Name = "3-E",
+                            Status = "A"
+                        },
+                        new
+                        {
+                            Id = 14,
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 900, DateTimeKind.Local).AddTicks(8076),
+                            Floor = 4,
+                            Letter = "A",
+                            Name = "4-A",
+                            Status = "A"
+                        },
+                        new
+                        {
+                            Id = 15,
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 900, DateTimeKind.Local).AddTicks(8077),
+                            Floor = 4,
+                            Letter = "B",
+                            Name = "4-B",
+                            Status = "A"
+                        },
+                        new
+                        {
+                            Id = 16,
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 900, DateTimeKind.Local).AddTicks(8078),
+                            Floor = 4,
+                            Letter = "C",
+                            Name = "4-C",
+                            Status = "A"
+                        },
+                        new
+                        {
+                            Id = 17,
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 900, DateTimeKind.Local).AddTicks(8080),
+                            Floor = 4,
+                            Letter = "D",
+                            Name = "4-D",
+                            Status = "A"
+                        },
+                        new
+                        {
+                            Id = 18,
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 900, DateTimeKind.Local).AddTicks(8081),
+                            Floor = 4,
+                            Letter = "E",
+                            Name = "4-E",
+                            Status = "A"
+                        },
+                        new
+                        {
+                            Id = 19,
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 900, DateTimeKind.Local).AddTicks(8083),
+                            Floor = 5,
+                            Letter = "A",
+                            Name = "5-A",
+                            Status = "A"
+                        },
+                        new
+                        {
+                            Id = 20,
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 900, DateTimeKind.Local).AddTicks(8084),
+                            Floor = 5,
+                            Letter = "B",
+                            Name = "5-B",
+                            Status = "A"
+                        },
+                        new
+                        {
+                            Id = 21,
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 900, DateTimeKind.Local).AddTicks(8085),
+                            Floor = 5,
+                            Letter = "C",
+                            Name = "5-C",
+                            Status = "A"
+                        },
+                        new
+                        {
+                            Id = 22,
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 900, DateTimeKind.Local).AddTicks(8088),
+                            Floor = 5,
+                            Letter = "D",
+                            Name = "5-D",
+                            Status = "A"
+                        },
+                        new
+                        {
+                            Id = 23,
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 900, DateTimeKind.Local).AddTicks(8089),
+                            Floor = 5,
+                            Letter = "E",
+                            Name = "5-E",
+                            Status = "A"
+                        },
+                        new
+                        {
+                            Id = 24,
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 900, DateTimeKind.Local).AddTicks(8090),
+                            Floor = 6,
+                            Letter = "A",
+                            Name = "6-A",
+                            Status = "A"
+                        },
+                        new
+                        {
+                            Id = 25,
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 900, DateTimeKind.Local).AddTicks(8092),
+                            Floor = 6,
+                            Letter = "B",
+                            Name = "6-B",
+                            Status = "A"
+                        },
+                        new
+                        {
+                            Id = 26,
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 900, DateTimeKind.Local).AddTicks(8094),
+                            Floor = 6,
+                            Letter = "C",
+                            Name = "6-C",
+                            Status = "A"
+                        },
+                        new
+                        {
+                            Id = 27,
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 900, DateTimeKind.Local).AddTicks(8095),
+                            Floor = 6,
+                            Letter = "D",
+                            Name = "6-D",
+                            Status = "A"
+                        },
+                        new
+                        {
+                            Id = 28,
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 900, DateTimeKind.Local).AddTicks(8096),
+                            Floor = 6,
+                            Letter = "E",
+                            Name = "28-E",
+                            Status = "A"
+                        },
+                        new
+                        {
+                            Id = 29,
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 900, DateTimeKind.Local).AddTicks(8097),
+                            Floor = 7,
+                            Letter = "A",
+                            Name = "7-A",
+                            Status = "A"
+                        },
+                        new
+                        {
+                            Id = 30,
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 900, DateTimeKind.Local).AddTicks(8099),
+                            Floor = 7,
+                            Letter = "B",
+                            Name = "7-B",
+                            Status = "A"
+                        },
+                        new
+                        {
+                            Id = 31,
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 900, DateTimeKind.Local).AddTicks(8100),
+                            Floor = 7,
+                            Letter = "C",
+                            Name = "7-C",
+                            Status = "A"
+                        },
+                        new
+                        {
+                            Id = 32,
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 900, DateTimeKind.Local).AddTicks(8101),
+                            Floor = 7,
+                            Letter = "D",
+                            Name = "7-D",
+                            Status = "A"
+                        },
+                        new
+                        {
+                            Id = 33,
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 900, DateTimeKind.Local).AddTicks(8102),
+                            Floor = 7,
+                            Letter = "E",
+                            Name = "33-E",
+                            Status = "A"
+                        },
+                        new
+                        {
+                            Id = 34,
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 900, DateTimeKind.Local).AddTicks(8104),
+                            Floor = 8,
+                            Letter = "A",
+                            Name = "8-A",
+                            Status = "A"
+                        },
+                        new
+                        {
+                            Id = 35,
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 900, DateTimeKind.Local).AddTicks(8106),
+                            Floor = 8,
+                            Letter = "B",
+                            Name = "8-B",
+                            Status = "A"
+                        },
+                        new
+                        {
+                            Id = 36,
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 900, DateTimeKind.Local).AddTicks(8107),
+                            Floor = 8,
+                            Letter = "C",
+                            Name = "8-C",
+                            Status = "A"
+                        },
+                        new
+                        {
+                            Id = 37,
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 900, DateTimeKind.Local).AddTicks(8108),
+                            Floor = 8,
+                            Letter = "D",
+                            Name = "8-D",
+                            Status = "A"
+                        },
+                        new
+                        {
+                            Id = 38,
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 900, DateTimeKind.Local).AddTicks(8109),
+                            Floor = 8,
+                            Letter = "E",
+                            Name = "8-E",
+                            Status = "A"
+                        },
+                        new
+                        {
+                            Id = 39,
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 900, DateTimeKind.Local).AddTicks(8110),
+                            Floor = 9,
+                            Letter = "A",
+                            Name = "9-A",
+                            Status = "A"
+                        },
+                        new
+                        {
+                            Id = 40,
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 900, DateTimeKind.Local).AddTicks(8111),
+                            Floor = 9,
+                            Letter = "B",
+                            Name = "9-B",
+                            Status = "A"
+                        },
+                        new
+                        {
+                            Id = 41,
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 900, DateTimeKind.Local).AddTicks(8113),
+                            Floor = 9,
+                            Letter = "C",
+                            Name = "9-C",
+                            Status = "A"
+                        },
+                        new
+                        {
+                            Id = 42,
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 900, DateTimeKind.Local).AddTicks(8114),
+                            Floor = 9,
+                            Letter = "D",
+                            Name = "9-D",
+                            Status = "A"
+                        },
+                        new
+                        {
+                            Id = 43,
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 900, DateTimeKind.Local).AddTicks(8115),
+                            Floor = 9,
+                            Letter = "E",
+                            Name = "9-E",
+                            Status = "A"
+                        },
+                        new
+                        {
+                            Id = 44,
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 900, DateTimeKind.Local).AddTicks(8116),
+                            Floor = 10,
+                            Letter = "A",
+                            Name = "10-A",
+                            Status = "A"
+                        },
+                        new
+                        {
+                            Id = 45,
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 900, DateTimeKind.Local).AddTicks(8117),
+                            Floor = 10,
+                            Letter = "B",
+                            Name = "10-B",
+                            Status = "A"
+                        },
+                        new
+                        {
+                            Id = 46,
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 900, DateTimeKind.Local).AddTicks(8118),
+                            Floor = 10,
+                            Letter = "C",
+                            Name = "10-C",
+                            Status = "A"
+                        },
+                        new
+                        {
+                            Id = 47,
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 900, DateTimeKind.Local).AddTicks(8120),
+                            Floor = 10,
+                            Letter = "D",
+                            Name = "10-D",
+                            Status = "A"
+                        },
+                        new
+                        {
+                            Id = 48,
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 900, DateTimeKind.Local).AddTicks(8152),
+                            Floor = 10,
+                            Letter = "E",
+                            Name = "10-E",
+                            Status = "A"
+                        },
+                        new
+                        {
+                            Id = 49,
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 900, DateTimeKind.Local).AddTicks(8153),
+                            Floor = 11,
+                            Letter = "A",
+                            Name = "11-A",
+                            Status = "A"
+                        },
+                        new
+                        {
+                            Id = 50,
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 900, DateTimeKind.Local).AddTicks(8154),
+                            Floor = 11,
+                            Letter = "B",
+                            Name = "11-B",
+                            Status = "A"
+                        },
+                        new
+                        {
+                            Id = 51,
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 900, DateTimeKind.Local).AddTicks(8157),
+                            Floor = 11,
+                            Letter = "C",
+                            Name = "11-C",
+                            Status = "A"
+                        },
+                        new
+                        {
+                            Id = 52,
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 900, DateTimeKind.Local).AddTicks(8158),
+                            Floor = 11,
+                            Letter = "D",
+                            Name = "11-D",
+                            Status = "A"
+                        },
+                        new
+                        {
+                            Id = 53,
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 900, DateTimeKind.Local).AddTicks(8160),
+                            Floor = 11,
+                            Letter = "E",
+                            Name = "11-E",
                             Status = "A"
                         });
                 });
@@ -297,6 +657,113 @@ namespace PHAdmin.API.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("ExpenseTypes");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            ExpenseName = "Artículos de limpieza"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            ExpenseName = "Caja de Seguro Social"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            ExpenseName = "Caja menuda"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            ExpenseName = "Cargos bancarios"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            ExpenseName = "Cerrajería"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            ExpenseName = "Conserje"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            ExpenseName = "Devolución de reserva"
+                        },
+                        new
+                        {
+                            Id = 8,
+                            ExpenseName = "Fotocopias"
+                        },
+                        new
+                        {
+                            Id = 9,
+                            ExpenseName = "Fumigación"
+                        },
+                        new
+                        {
+                            Id = 10,
+                            ExpenseName = "Gastos legales"
+                        },
+                        new
+                        {
+                            Id = 11,
+                            ExpenseName = "Mantenimiento de A/A."
+                        },
+                        new
+                        {
+                            Id = 12,
+                            ExpenseName = "Mantenimiento de ascensores"
+                        },
+                        new
+                        {
+                            Id = 13,
+                            ExpenseName = "Mantenimiento de bomba de agua"
+                        },
+                        new
+                        {
+                            Id = 14,
+                            ExpenseName = "Mantenimiento de planta eléctrica"
+                        },
+                        new
+                        {
+                            Id = 15,
+                            ExpenseName = "Mantenimiento de puertas mecánicas"
+                        },
+                        new
+                        {
+                            Id = 16,
+                            ExpenseName = "Portería"
+                        },
+                        new
+                        {
+                            Id = 17,
+                            ExpenseName = "Reembolso"
+                        },
+                        new
+                        {
+                            Id = 18,
+                            ExpenseName = "Servicio de administración"
+                        },
+                        new
+                        {
+                            Id = 19,
+                            ExpenseName = "Servicio de agua"
+                        },
+                        new
+                        {
+                            Id = 20,
+                            ExpenseName = "Servicio de electricidad"
+                        },
+                        new
+                        {
+                            Id = 21,
+                            ExpenseName = "Servicio de gas"
+                        });
                 });
 
             modelBuilder.Entity("PHAdmin.API.Entities.Holiday", b =>
@@ -502,636 +969,636 @@ namespace PHAdmin.API.Migrations
                         new
                         {
                             Id = 1,
-                            CreationDate = new DateTime(2022, 12, 6, 9, 25, 10, 998, DateTimeKind.Local).AddTicks(2497),
-                            Email = "Paulina.Korta@hotmail.com",
-                            Identification = "393 711 122",
-                            Name = "Paulina Korta",
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 903, DateTimeKind.Local).AddTicks(9683),
+                            Email = "Blanca_Quezada53@gmail.com",
+                            Identification = "824 898 449",
+                            Name = "Blanca Quezada",
                             Password = "1234",
-                            Phone = "549.670.810",
+                            Phone = "5026-448-753",
                             RoleId = 2,
                             Status = "A"
                         },
                         new
                         {
                             Id = 2,
-                            CreationDate = new DateTime(2022, 12, 6, 9, 25, 10, 998, DateTimeKind.Local).AddTicks(3526),
-                            Email = "Hugo75@nearbpo.com",
-                            Identification = "170 248 900",
-                            Name = "Hugo Rodarte",
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 904, DateTimeKind.Local).AddTicks(1211),
+                            Email = "AngelGabriel66@hotmail.com",
+                            Identification = "818 070 435",
+                            Name = "Ángel Gabriel León",
                             Password = "1234",
-                            Phone = "5773-486-850",
+                            Phone = "529 637 586",
                             RoleId = 2,
                             Status = "A"
                         },
                         new
                         {
                             Id = 3,
-                            CreationDate = new DateTime(2022, 12, 6, 9, 25, 10, 998, DateTimeKind.Local).AddTicks(4167),
-                            Email = "AnaSofia26@yahoo.com",
-                            Identification = "067 285 411",
-                            Name = "Ana Sofía Ibarra",
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 904, DateTimeKind.Local).AddTicks(2289),
+                            Email = "Armando_Casas@nearbpo.com",
+                            Identification = "219 001 278",
+                            Name = "Armando Casas",
                             Password = "1234",
-                            Phone = "5874-931-526",
+                            Phone = "5660-014-629",
                             RoleId = 2,
                             Status = "A"
                         },
                         new
                         {
                             Id = 4,
-                            CreationDate = new DateTime(2022, 12, 6, 9, 25, 10, 998, DateTimeKind.Local).AddTicks(4803),
-                            Email = "Alexa_Espinal@corpfolder.com",
-                            Identification = "908 452 576",
-                            Name = "Alexa Espinal",
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 904, DateTimeKind.Local).AddTicks(3083),
+                            Email = "Paola_Olivera@corpfolder.com",
+                            Identification = "386 773 618",
+                            Name = "Paola Olivera",
                             Password = "1234",
-                            Phone = "549 616 446",
+                            Phone = "5595-785-954",
                             RoleId = 2,
                             Status = "A"
                         },
                         new
                         {
                             Id = 5,
-                            CreationDate = new DateTime(2022, 12, 6, 9, 25, 10, 998, DateTimeKind.Local).AddTicks(5402),
-                            Email = "Dolores_Maya91@gmail.com",
-                            Identification = "645 214 552",
-                            Name = "Dolores Maya",
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 904, DateTimeKind.Local).AddTicks(3947),
+                            Email = "Susana.Kardachesoto@corpfolder.com",
+                            Identification = "688 747 104",
+                            Name = "Susana Kardache soto",
                             Password = "1234",
-                            Phone = "5744-647-086",
+                            Phone = "599.447.551",
                             RoleId = 2,
                             Status = "A"
                         },
                         new
                         {
                             Id = 6,
-                            CreationDate = new DateTime(2022, 12, 6, 9, 25, 10, 998, DateTimeKind.Local).AddTicks(5996),
-                            Email = "Lorena.Kanaria20@gmail.com",
-                            Identification = "280 475 054",
-                            Name = "Lorena Kanaria",
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 904, DateTimeKind.Local).AddTicks(4744),
+                            Email = "Isabel92@nearbpo.com",
+                            Identification = "390 411 411",
+                            Name = "Isabel Sandoval",
                             Password = "1234",
-                            Phone = "515319241",
+                            Phone = "579.641.983",
                             RoleId = 2,
                             Status = "A"
                         },
                         new
                         {
                             Id = 7,
-                            CreationDate = new DateTime(2022, 12, 6, 9, 25, 10, 998, DateTimeKind.Local).AddTicks(6624),
-                            Email = "AngelGabriel99@yahoo.com",
-                            Identification = "077 337 962",
-                            Name = "Ángel Gabriel Peralta",
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 904, DateTimeKind.Local).AddTicks(5763),
+                            Email = "Isaias_Centeno69@gmail.com",
+                            Identification = "358 810 687",
+                            Name = "Isaias Centeno",
                             Password = "1234",
-                            Phone = "599 341 869",
+                            Phone = "578375061",
                             RoleId = 2,
                             Status = "A"
                         },
                         new
                         {
                             Id = 8,
-                            CreationDate = new DateTime(2022, 12, 6, 9, 25, 10, 998, DateTimeKind.Local).AddTicks(7267),
-                            Email = "Nicole8@yahoo.com",
-                            Identification = "201 586 120",
-                            Name = "Nicole Gaitán",
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 904, DateTimeKind.Local).AddTicks(6586),
+                            Email = "Conchita66@corpfolder.com",
+                            Identification = "446 858 979",
+                            Name = "Conchita Gaona",
                             Password = "1234",
-                            Phone = "513.620.421",
+                            Phone = "571.496.079",
                             RoleId = 2,
                             Status = "A"
                         },
                         new
                         {
                             Id = 9,
-                            CreationDate = new DateTime(2022, 12, 6, 9, 25, 10, 998, DateTimeKind.Local).AddTicks(7881),
-                            Email = "Natalia.Espinal@corpfolder.com",
-                            Identification = "863 240 453",
-                            Name = "Natalia Espinal",
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 904, DateTimeKind.Local).AddTicks(7306),
+                            Email = "Blanca_Orosco@yahoo.com",
+                            Identification = "836 825 471",
+                            Name = "Blanca Orosco",
                             Password = "1234",
-                            Phone = "545142498",
+                            Phone = "539.254.652",
                             RoleId = 2,
                             Status = "A"
                         },
                         new
                         {
                             Id = 10,
-                            CreationDate = new DateTime(2022, 12, 6, 9, 25, 10, 998, DateTimeKind.Local).AddTicks(8461),
-                            Email = "LuisFernando76@gmail.com",
-                            Identification = "184 012 169",
-                            Name = "Luis Fernando Verdugo",
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 904, DateTimeKind.Local).AddTicks(8108),
+                            Email = "Leonardo_Nunez59@gmail.com",
+                            Identification = "714 800 521",
+                            Name = "Leonardo Núñez",
                             Password = "1234",
-                            Phone = "5692-296-824",
+                            Phone = "541 240 249",
                             RoleId = 2,
                             Status = "A"
                         },
                         new
                         {
                             Id = 11,
-                            CreationDate = new DateTime(2022, 12, 6, 9, 25, 10, 998, DateTimeKind.Local).AddTicks(9065),
-                            Email = "Israel.Briones88@hotmail.com",
-                            Identification = "153 595 889",
-                            Name = "Israel Briones",
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 904, DateTimeKind.Local).AddTicks(8942),
+                            Email = "FernandoJavier_Escalante@yahoo.com",
+                            Identification = "021 255 955",
+                            Name = "Fernando Javier Escalante",
                             Password = "1234",
-                            Phone = "5934-355-899",
+                            Phone = "569424938",
                             RoleId = 2,
                             Status = "A"
                         },
                         new
                         {
                             Id = 12,
-                            CreationDate = new DateTime(2022, 12, 6, 9, 25, 10, 998, DateTimeKind.Local).AddTicks(9629),
-                            Email = "Rafael_Pantoja@yahoo.com",
-                            Identification = "574 073 532",
-                            Name = "Rafael Pantoja",
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 904, DateTimeKind.Local).AddTicks(9747),
+                            Email = "Amalia_Fuentes@yahoo.com",
+                            Identification = "475 627 949",
+                            Name = "Amalia Fuentes",
                             Password = "1234",
-                            Phone = "522.032.834",
+                            Phone = "526 736 502",
                             RoleId = 2,
                             Status = "A"
                         },
                         new
                         {
                             Id = 13,
-                            CreationDate = new DateTime(2022, 12, 6, 9, 25, 10, 999, DateTimeKind.Local).AddTicks(247),
-                            Email = "AngelGabriel73@hotmail.com",
-                            Identification = "499 399 517",
-                            Name = "Ángel Gabriel Gallegos",
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 905, DateTimeKind.Local).AddTicks(526),
+                            Email = "Brayan.Rosario8@gmail.com",
+                            Identification = "875 193 823",
+                            Name = "Brayan Rosario",
                             Password = "1234",
-                            Phone = "526398360",
+                            Phone = "5243-922-479",
                             RoleId = 2,
                             Status = "A"
                         },
                         new
                         {
                             Id = 14,
-                            CreationDate = new DateTime(2022, 12, 6, 9, 25, 10, 999, DateTimeKind.Local).AddTicks(891),
-                            Email = "Emiliano.Sedillo4@gmail.com",
-                            Identification = "709 991 921",
-                            Name = "Emiliano Sedillo",
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 905, DateTimeKind.Local).AddTicks(1516),
+                            Email = "Octavio2@corpfolder.com",
+                            Identification = "927 824 797",
+                            Name = "Octavio Escamilla",
                             Password = "1234",
-                            Phone = "557.940.851",
+                            Phone = "585 307 980",
                             RoleId = 2,
                             Status = "A"
                         },
                         new
                         {
                             Id = 15,
-                            CreationDate = new DateTime(2022, 12, 6, 9, 25, 10, 999, DateTimeKind.Local).AddTicks(1514),
-                            Email = "Martin.Segovia@yahoo.com",
-                            Identification = "198 404 782",
-                            Name = "Martín Segovia",
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 905, DateTimeKind.Local).AddTicks(2419),
+                            Email = "Angela_Rubio@nearbpo.com",
+                            Identification = "144 533 742",
+                            Name = "Ángela Rubio",
                             Password = "1234",
-                            Phone = "561.419.772",
+                            Phone = "512367606",
                             RoleId = 2,
                             Status = "A"
                         },
                         new
                         {
                             Id = 16,
-                            CreationDate = new DateTime(2022, 12, 6, 9, 25, 10, 999, DateTimeKind.Local).AddTicks(2078),
-                            Email = "Mayte.Pelayo90@gmail.com",
-                            Identification = "842 066 656",
-                            Name = "Mayte Pelayo",
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 905, DateTimeKind.Local).AddTicks(3216),
+                            Email = "Francisco31@corpfolder.com",
+                            Identification = "844 493 270",
+                            Name = "Francisco Urrutia",
                             Password = "1234",
-                            Phone = "561.896.509",
+                            Phone = "514.567.325",
                             RoleId = 2,
                             Status = "A"
                         },
                         new
                         {
                             Id = 17,
-                            CreationDate = new DateTime(2022, 12, 6, 9, 25, 10, 999, DateTimeKind.Local).AddTicks(2707),
-                            Email = "Uriel_Rios@gmail.com",
-                            Identification = "575 905 062",
-                            Name = "Uriel Ríos",
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 905, DateTimeKind.Local).AddTicks(4040),
+                            Email = "Isaias_Sotelo@yahoo.com",
+                            Identification = "774 889 976",
+                            Name = "Isaias Sotelo",
                             Password = "1234",
-                            Phone = "589 671 770",
+                            Phone = "543413811",
                             RoleId = 2,
                             Status = "A"
                         },
                         new
                         {
                             Id = 18,
-                            CreationDate = new DateTime(2022, 12, 6, 9, 25, 10, 999, DateTimeKind.Local).AddTicks(3312),
-                            Email = "Jorge21@hotmail.com",
-                            Identification = "619 684 046",
-                            Name = "Jorge Saldivar",
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 905, DateTimeKind.Local).AddTicks(4787),
+                            Email = "MariadelCarmen.Navarrete@yahoo.com",
+                            Identification = "581 218 450",
+                            Name = "María del Carmen Navarrete",
                             Password = "1234",
-                            Phone = "581912058",
+                            Phone = "527 847 562",
                             RoleId = 2,
                             Status = "A"
                         },
                         new
                         {
                             Id = 19,
-                            CreationDate = new DateTime(2022, 12, 6, 9, 25, 10, 999, DateTimeKind.Local).AddTicks(3870),
-                            Email = "Eloisa_Madrigal@nearbpo.com",
-                            Identification = "561 193 442",
-                            Name = "Eloisa Madrigal",
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 905, DateTimeKind.Local).AddTicks(5521),
+                            Email = "Marilu_Tamayo10@corpfolder.com",
+                            Identification = "723 033 536",
+                            Name = "Marilu Tamayo",
                             Password = "1234",
-                            Phone = "5005-431-835",
+                            Phone = "5062-921-243",
                             RoleId = 2,
                             Status = "A"
                         },
                         new
                         {
                             Id = 20,
-                            CreationDate = new DateTime(2022, 12, 6, 9, 25, 10, 999, DateTimeKind.Local).AddTicks(4516),
-                            Email = "Lucas64@nearbpo.com",
-                            Identification = "124 082 215",
-                            Name = "Lucas Alonzo",
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 905, DateTimeKind.Local).AddTicks(6379),
+                            Email = "Nicole.Bustos9@corpfolder.com",
+                            Identification = "982 919 185",
+                            Name = "Nicole Bustos",
                             Password = "1234",
-                            Phone = "500 731 980",
+                            Phone = "505896818",
                             RoleId = 2,
                             Status = "A"
                         },
                         new
                         {
                             Id = 21,
-                            CreationDate = new DateTime(2022, 12, 6, 9, 25, 10, 999, DateTimeKind.Local).AddTicks(5069),
-                            Email = "Jacobo.Luevano@nearbpo.com",
-                            Identification = "541 197 141",
-                            Name = "Jacobo Luevano",
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 905, DateTimeKind.Local).AddTicks(7224),
+                            Email = "Norma_Rascon@yahoo.com",
+                            Identification = "513 834 101",
+                            Name = "Norma Rascón",
                             Password = "1234",
-                            Phone = "526.640.000",
+                            Phone = "526200302",
                             RoleId = 2,
                             Status = "A"
                         },
                         new
                         {
                             Id = 22,
-                            CreationDate = new DateTime(2022, 12, 6, 9, 25, 10, 999, DateTimeKind.Local).AddTicks(5647),
-                            Email = "Emiliano_Collado@yahoo.com",
-                            Identification = "275 430 148",
-                            Name = "Emiliano Collado",
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 905, DateTimeKind.Local).AddTicks(7918),
+                            Email = "Gonzalo49@corpfolder.com",
+                            Identification = "384 523 684",
+                            Name = "Gonzalo Véliz",
                             Password = "1234",
-                            Phone = "5568-786-240",
+                            Phone = "5172-822-390",
                             RoleId = 2,
                             Status = "A"
                         },
                         new
                         {
                             Id = 23,
-                            CreationDate = new DateTime(2022, 12, 6, 9, 25, 10, 999, DateTimeKind.Local).AddTicks(6230),
-                            Email = "Paola_Jaime@nearbpo.com",
-                            Identification = "013 483 326",
-                            Name = "Paola Jaime",
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 905, DateTimeKind.Local).AddTicks(8733),
+                            Email = "Abril28@nearbpo.com",
+                            Identification = "389 251 992",
+                            Name = "Abril Mercado",
                             Password = "1234",
-                            Phone = "509.767.098",
+                            Phone = "5117-264-321",
                             RoleId = 2,
                             Status = "A"
                         },
                         new
                         {
                             Id = 24,
-                            CreationDate = new DateTime(2022, 12, 6, 9, 25, 10, 999, DateTimeKind.Local).AddTicks(6803),
-                            Email = "Sancho66@gmail.com",
-                            Identification = "207 300 468",
-                            Name = "Sancho Ortiz",
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 905, DateTimeKind.Local).AddTicks(9492),
+                            Email = "Reina.Vallejo@yahoo.com",
+                            Identification = "825 783 897",
+                            Name = "Reina Vallejo",
                             Password = "1234",
-                            Phone = "533467317",
+                            Phone = "520.659.413",
                             RoleId = 2,
                             Status = "A"
                         },
                         new
                         {
                             Id = 25,
-                            CreationDate = new DateTime(2022, 12, 6, 9, 25, 10, 999, DateTimeKind.Local).AddTicks(7389),
-                            Email = "Ricardo_Tello@nearbpo.com",
-                            Identification = "180 403 248",
-                            Name = "Ricardo Tello",
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 906, DateTimeKind.Local).AddTicks(192),
+                            Email = "Juana55@nearbpo.com",
+                            Identification = "415 376 318",
+                            Name = "Juana Rivero",
                             Password = "1234",
-                            Phone = "524978221",
+                            Phone = "544.766.403",
                             RoleId = 2,
                             Status = "A"
                         },
                         new
                         {
                             Id = 26,
-                            CreationDate = new DateTime(2022, 12, 6, 9, 25, 10, 999, DateTimeKind.Local).AddTicks(8136),
-                            Email = "Marisol.Montenegro21@yahoo.com",
-                            Identification = "279 660 690",
-                            Name = "Marisol Montenegro",
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 906, DateTimeKind.Local).AddTicks(932),
+                            Email = "Esteban.Blanco46@yahoo.com",
+                            Identification = "608 988 077",
+                            Name = "Esteban Blanco",
                             Password = "1234",
-                            Phone = "5460-398-158",
+                            Phone = "5513-312-709",
                             RoleId = 2,
                             Status = "A"
                         },
                         new
                         {
                             Id = 27,
-                            CreationDate = new DateTime(2022, 12, 6, 9, 25, 10, 999, DateTimeKind.Local).AddTicks(8749),
-                            Email = "Lucas_Navarrete@yahoo.com",
-                            Identification = "832 220 081",
-                            Name = "Lucas Navarrete",
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 906, DateTimeKind.Local).AddTicks(1695),
+                            Email = "MiguelAngel1@hotmail.com",
+                            Identification = "046 104 055",
+                            Name = "Miguel Ángel Rocha",
                             Password = "1234",
-                            Phone = "543866174",
+                            Phone = "572730347",
                             RoleId = 2,
                             Status = "A"
                         },
                         new
                         {
                             Id = 28,
-                            CreationDate = new DateTime(2022, 12, 6, 9, 25, 10, 999, DateTimeKind.Local).AddTicks(9297),
-                            Email = "Teodoro_Trejo@hotmail.com",
-                            Identification = "524 980 190",
-                            Name = "Teodoro Trejo",
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 906, DateTimeKind.Local).AddTicks(2507),
+                            Email = "LuisFernando_Zamarripa64@yahoo.com",
+                            Identification = "251 801 478",
+                            Name = "Luis Fernando Zamarripa",
                             Password = "1234",
-                            Phone = "5499-671-662",
+                            Phone = "569008256",
                             RoleId = 2,
                             Status = "A"
                         },
                         new
                         {
                             Id = 29,
-                            CreationDate = new DateTime(2022, 12, 6, 9, 25, 10, 999, DateTimeKind.Local).AddTicks(9874),
-                            Email = "Ernesto_Vargas@gmail.com",
-                            Identification = "313 250 797",
-                            Name = "Ernesto Vargas",
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 906, DateTimeKind.Local).AddTicks(3269),
+                            Email = "Esteban93@gmail.com",
+                            Identification = "573 079 688",
+                            Name = "Esteban Tafoya",
                             Password = "1234",
-                            Phone = "587 128 467",
+                            Phone = "554 664 230",
                             RoleId = 2,
                             Status = "A"
                         },
                         new
                         {
                             Id = 30,
-                            CreationDate = new DateTime(2022, 12, 6, 9, 25, 11, 0, DateTimeKind.Local).AddTicks(554),
-                            Email = "Fatima18@corpfolder.com",
-                            Identification = "241 831 882",
-                            Name = "Fatima Arellano",
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 906, DateTimeKind.Local).AddTicks(4024),
+                            Email = "Daniel16@gmail.com",
+                            Identification = "578 856 387",
+                            Name = "Daniel Centeno",
                             Password = "1234",
-                            Phone = "528023606",
+                            Phone = "561868281",
                             RoleId = 2,
                             Status = "A"
                         },
                         new
                         {
                             Id = 31,
-                            CreationDate = new DateTime(2022, 12, 6, 9, 25, 11, 0, DateTimeKind.Local).AddTicks(1152),
-                            Email = "Alfonso.Murillo11@gmail.com",
-                            Identification = "905 288 254",
-                            Name = "Alfonso Murillo",
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 906, DateTimeKind.Local).AddTicks(4798),
+                            Email = "Cecilia28@nearbpo.com",
+                            Identification = "503 190 050",
+                            Name = "Cecilia Campos",
                             Password = "1234",
-                            Phone = "583938092",
+                            Phone = "533.476.753",
                             RoleId = 2,
                             Status = "A"
                         },
                         new
                         {
                             Id = 32,
-                            CreationDate = new DateTime(2022, 12, 6, 9, 25, 11, 0, DateTimeKind.Local).AddTicks(1725),
-                            Email = "Roberto73@hotmail.com",
-                            Identification = "267 674 679",
-                            Name = "Roberto Rojas",
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 906, DateTimeKind.Local).AddTicks(5524),
+                            Email = "Olivia_Abrego34@gmail.com",
+                            Identification = "626 186 415",
+                            Name = "Olivia Abrego",
                             Password = "1234",
-                            Phone = "557 474 340",
+                            Phone = "581 900 106",
                             RoleId = 2,
                             Status = "A"
                         },
                         new
                         {
                             Id = 33,
-                            CreationDate = new DateTime(2022, 12, 6, 9, 25, 11, 0, DateTimeKind.Local).AddTicks(2350),
-                            Email = "Salvador_Gastelum@nearbpo.com",
-                            Identification = "849 427 752",
-                            Name = "Salvador Gastélum",
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 906, DateTimeKind.Local).AddTicks(6275),
+                            Email = "Estefania.Dominquez80@gmail.com",
+                            Identification = "547 953 117",
+                            Name = "Estefanía Domínquez",
                             Password = "1234",
-                            Phone = "546 662 377",
+                            Phone = "559 409 326",
                             RoleId = 2,
                             Status = "A"
                         },
                         new
                         {
                             Id = 34,
-                            CreationDate = new DateTime(2022, 12, 6, 9, 25, 11, 0, DateTimeKind.Local).AddTicks(3010),
-                            Email = "Patricio.Vargas3@corpfolder.com",
-                            Identification = "542 259 676",
-                            Name = "Patricio Vargas",
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 906, DateTimeKind.Local).AddTicks(6980),
+                            Email = "Saul.Tamez77@corpfolder.com",
+                            Identification = "234 625 804",
+                            Name = "Saúl Tamez",
                             Password = "1234",
-                            Phone = "595 903 195",
+                            Phone = "550.412.124",
                             RoleId = 2,
                             Status = "A"
                         },
                         new
                         {
                             Id = 35,
-                            CreationDate = new DateTime(2022, 12, 6, 9, 25, 11, 0, DateTimeKind.Local).AddTicks(3611),
-                            Email = "Luz97@gmail.com",
-                            Identification = "370 401 606",
-                            Name = "Luz Palomo",
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 906, DateTimeKind.Local).AddTicks(7720),
+                            Email = "Maria.Pabon@nearbpo.com",
+                            Identification = "256 143 637",
+                            Name = "María Pabón",
                             Password = "1234",
-                            Phone = "5486-002-529",
+                            Phone = "505 488 456",
                             RoleId = 2,
                             Status = "A"
                         },
                         new
                         {
                             Id = 36,
-                            CreationDate = new DateTime(2022, 12, 6, 9, 25, 11, 0, DateTimeKind.Local).AddTicks(4236),
-                            Email = "Luisa43@yahoo.com",
-                            Identification = "815 435 367",
-                            Name = "Luisa Armendáriz",
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 906, DateTimeKind.Local).AddTicks(8427),
+                            Email = "Alan_Cardenas@corpfolder.com",
+                            Identification = "327 297 834",
+                            Name = "Alan Cardenas",
                             Password = "1234",
-                            Phone = "584158865",
+                            Phone = "554 210 256",
                             RoleId = 2,
                             Status = "A"
                         },
                         new
                         {
                             Id = 37,
-                            CreationDate = new DateTime(2022, 12, 6, 9, 25, 11, 0, DateTimeKind.Local).AddTicks(4856),
-                            Email = "Francisca.Posada@hotmail.com",
-                            Identification = "823 025 119",
-                            Name = "Francisca Posada",
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 906, DateTimeKind.Local).AddTicks(9176),
+                            Email = "Susana.Adorno37@nearbpo.com",
+                            Identification = "799 839 436",
+                            Name = "Susana Adorno",
                             Password = "1234",
-                            Phone = "5765-769-427",
+                            Phone = "557.844.410",
                             RoleId = 2,
                             Status = "A"
                         },
                         new
                         {
                             Id = 38,
-                            CreationDate = new DateTime(2022, 12, 6, 9, 25, 11, 0, DateTimeKind.Local).AddTicks(5450),
-                            Email = "MariaFernanda_Haro@gmail.com",
-                            Identification = "411 627 706",
-                            Name = "María Fernanda Haro",
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 906, DateTimeKind.Local).AddTicks(9909),
+                            Email = "Elisa_Alarcon81@nearbpo.com",
+                            Identification = "469 313 787",
+                            Name = "Elisa Alarcón",
                             Password = "1234",
-                            Phone = "530906451",
+                            Phone = "531319571",
                             RoleId = 2,
                             Status = "A"
                         },
                         new
                         {
                             Id = 39,
-                            CreationDate = new DateTime(2022, 12, 6, 9, 25, 11, 0, DateTimeKind.Local).AddTicks(6018),
-                            Email = "Guillermina15@yahoo.com",
-                            Identification = "593 594 245",
-                            Name = "Guillermina Iglesias",
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 907, DateTimeKind.Local).AddTicks(659),
+                            Email = "Claudio_Holguin@nearbpo.com",
+                            Identification = "338 609 126",
+                            Name = "Claudio Holguín",
                             Password = "1234",
-                            Phone = "5279-164-445",
+                            Phone = "524.317.922",
                             RoleId = 2,
                             Status = "A"
                         },
                         new
                         {
                             Id = 40,
-                            CreationDate = new DateTime(2022, 12, 6, 9, 25, 11, 0, DateTimeKind.Local).AddTicks(6732),
-                            Email = "Rosa.Velez71@yahoo.com",
-                            Identification = "589 993 179",
-                            Name = "Rosa Vélez",
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 907, DateTimeKind.Local).AddTicks(1411),
+                            Email = "Clara86@yahoo.com",
+                            Identification = "297 135 766",
+                            Name = "Clara Alfaro",
                             Password = "1234",
-                            Phone = "501 005 041",
+                            Phone = "571 008 749",
                             RoleId = 2,
                             Status = "A"
                         },
                         new
                         {
                             Id = 41,
-                            CreationDate = new DateTime(2022, 12, 6, 9, 25, 11, 0, DateTimeKind.Local).AddTicks(7315),
-                            Email = "Lucas.Cavazos39@yahoo.com",
-                            Identification = "066 807 868",
-                            Name = "Lucas Cavazos",
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 907, DateTimeKind.Local).AddTicks(2172),
+                            Email = "JoseEduardo52@hotmail.com",
+                            Identification = "170 565 584",
+                            Name = "José Eduardo Rojas",
                             Password = "1234",
-                            Phone = "5273-011-427",
+                            Phone = "500428596",
                             RoleId = 2,
                             Status = "A"
                         },
                         new
                         {
                             Id = 42,
-                            CreationDate = new DateTime(2022, 12, 6, 9, 25, 11, 0, DateTimeKind.Local).AddTicks(7861),
-                            Email = "Elena_Holguin10@gmail.com",
-                            Identification = "149 413 254",
-                            Name = "Elena Holguín",
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 907, DateTimeKind.Local).AddTicks(2895),
+                            Email = "Sara.Trujillo@gmail.com",
+                            Identification = "347 878 217",
+                            Name = "Sara Trujillo",
                             Password = "1234",
-                            Phone = "504983024",
+                            Phone = "575 400 440",
                             RoleId = 2,
                             Status = "A"
                         },
                         new
                         {
                             Id = 43,
-                            CreationDate = new DateTime(2022, 12, 6, 9, 25, 11, 0, DateTimeKind.Local).AddTicks(8491),
-                            Email = "JoseMiguel_Sandoval91@nearbpo.com",
-                            Identification = "441 534 567",
-                            Name = "José Miguel Sandoval",
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 907, DateTimeKind.Local).AddTicks(3638),
+                            Email = "Ricardo51@nearbpo.com",
+                            Identification = "393 825 849",
+                            Name = "Ricardo Valdivia",
                             Password = "1234",
-                            Phone = "517.764.727",
+                            Phone = "580 434 146",
                             RoleId = 2,
                             Status = "A"
                         },
                         new
                         {
                             Id = 44,
-                            CreationDate = new DateTime(2022, 12, 6, 9, 25, 11, 0, DateTimeKind.Local).AddTicks(9066),
-                            Email = "Mateo94@gmail.com",
-                            Identification = "215 898 735",
-                            Name = "Mateo Rivero",
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 907, DateTimeKind.Local).AddTicks(4344),
+                            Email = "Enrique.Delapaz@corpfolder.com",
+                            Identification = "311 679 732",
+                            Name = "Enrique Delapaz",
                             Password = "1234",
-                            Phone = "564.459.716",
+                            Phone = "508.440.964",
                             RoleId = 2,
                             Status = "A"
                         },
                         new
                         {
                             Id = 45,
-                            CreationDate = new DateTime(2022, 12, 6, 9, 25, 11, 0, DateTimeKind.Local).AddTicks(9624),
-                            Email = "Arturo_Delarosa@nearbpo.com",
-                            Identification = "220 624 043",
-                            Name = "Arturo Delarosa",
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 907, DateTimeKind.Local).AddTicks(5103),
+                            Email = "Beatriz.Longoria14@yahoo.com",
+                            Identification = "508 928 215",
+                            Name = "Beatriz Longoria",
                             Password = "1234",
-                            Phone = "533 194 370",
+                            Phone = "543 432 351",
                             RoleId = 2,
                             Status = "A"
                         },
                         new
                         {
                             Id = 46,
-                            CreationDate = new DateTime(2022, 12, 6, 9, 25, 11, 1, DateTimeKind.Local).AddTicks(225),
-                            Email = "Gael_Pulido@hotmail.com",
-                            Identification = "127 512 796",
-                            Name = "Gael Pulido",
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 907, DateTimeKind.Local).AddTicks(5860),
+                            Email = "Conchita_Villalpando80@hotmail.com",
+                            Identification = "753 389 212",
+                            Name = "Conchita Villalpando",
                             Password = "1234",
-                            Phone = "570 690 005",
+                            Phone = "5665-589-728",
                             RoleId = 2,
                             Status = "A"
                         },
                         new
                         {
                             Id = 47,
-                            CreationDate = new DateTime(2022, 12, 6, 9, 25, 11, 1, DateTimeKind.Local).AddTicks(902),
-                            Email = "Ximena26@yahoo.com",
-                            Identification = "665 230 405",
-                            Name = "Ximena Miranda",
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 907, DateTimeKind.Local).AddTicks(6550),
+                            Email = "Miranda.Chacon17@nearbpo.com",
+                            Identification = "312 889 231",
+                            Name = "Miranda Chacón",
                             Password = "1234",
-                            Phone = "534.602.840",
+                            Phone = "591599790",
                             RoleId = 2,
                             Status = "A"
                         },
                         new
                         {
                             Id = 48,
-                            CreationDate = new DateTime(2022, 12, 6, 9, 25, 11, 1, DateTimeKind.Local).AddTicks(1460),
-                            Email = "JoseMaria.Gollum@nearbpo.com",
-                            Identification = "562 480 764",
-                            Name = "José María Gollum",
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 907, DateTimeKind.Local).AddTicks(7280),
+                            Email = "Anita88@yahoo.com",
+                            Identification = "485 341 119",
+                            Name = "Anita Caballero",
                             Password = "1234",
-                            Phone = "5035-581-918",
+                            Phone = "5417-776-811",
                             RoleId = 2,
                             Status = "A"
                         },
                         new
                         {
                             Id = 49,
-                            CreationDate = new DateTime(2022, 12, 6, 9, 25, 11, 1, DateTimeKind.Local).AddTicks(2074),
-                            Email = "Amalia_Urena4@yahoo.com",
-                            Identification = "398 777 342",
-                            Name = "Amalia Ureña",
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 907, DateTimeKind.Local).AddTicks(8033),
+                            Email = "MariaJose_Arguello83@nearbpo.com",
+                            Identification = "006 107 080",
+                            Name = "María José Arguello",
                             Password = "1234",
-                            Phone = "5604-925-675",
+                            Phone = "501.799.008",
                             RoleId = 2,
                             Status = "A"
                         },
                         new
                         {
                             Id = 50,
-                            CreationDate = new DateTime(2022, 12, 6, 9, 25, 11, 1, DateTimeKind.Local).AddTicks(2693),
-                            Email = "Luis72@gmail.com",
-                            Identification = "288 584 089",
-                            Name = "Luis Gil",
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 907, DateTimeKind.Local).AddTicks(8735),
+                            Email = "Esteban_Salas7@corpfolder.com",
+                            Identification = "158 119 552",
+                            Name = "Esteban Salas",
                             Password = "1234",
-                            Phone = "5778-436-169",
+                            Phone = "562398854",
                             RoleId = 2,
                             Status = "A"
                         },
                         new
                         {
                             Id = 51,
-                            CreationDate = new DateTime(2022, 12, 6, 9, 25, 11, 1, DateTimeKind.Local).AddTicks(3251),
-                            Email = "Felipe.Ochoa@corpfolder.com",
-                            Identification = "418 404 570",
-                            Name = "Felipe Ochoa",
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 907, DateTimeKind.Local).AddTicks(9486),
+                            Email = "MariaTeresa.Galvan@yahoo.com",
+                            Identification = "627 316 607",
+                            Name = "María Teresa Galván",
                             Password = "1234",
-                            Phone = "517 199 084",
+                            Phone = "513386339",
                             RoleId = 2,
                             Status = "A"
                         },
                         new
                         {
                             Id = 52,
-                            CreationDate = new DateTime(2022, 12, 6, 9, 25, 11, 1, DateTimeKind.Local).AddTicks(3848),
-                            Email = "Beatriz59@yahoo.com",
-                            Identification = "930 579 529",
-                            Name = "Beatriz Farías",
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 908, DateTimeKind.Local).AddTicks(217),
+                            Email = "Santiago_Pineda11@hotmail.com",
+                            Identification = "967 666 967",
+                            Name = "Santiago Pineda",
                             Password = "1234",
-                            Phone = "5759-773-420",
+                            Phone = "536.611.641",
                             RoleId = 2,
                             Status = "A"
                         },
                         new
                         {
                             Id = 53,
-                            CreationDate = new DateTime(2022, 12, 6, 9, 25, 11, 1, DateTimeKind.Local).AddTicks(4498),
-                            Email = "Victor.Armenta71@corpfolder.com",
-                            Identification = "450 460 068",
-                            Name = "Víctor Armenta",
+                            CreationDate = new DateTime(2022, 12, 6, 15, 22, 2, 908, DateTimeKind.Local).AddTicks(908),
+                            Email = "Debora_Carmona@corpfolder.com",
+                            Identification = "349 682 898",
+                            Name = "Débora Carmona",
                             Password = "1234",
-                            Phone = "5310-142-013",
+                            Phone = "510.370.668",
                             RoleId = 2,
                             Status = "A"
                         });
