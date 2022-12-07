@@ -538,7 +538,7 @@ namespace PHAdmin.API.DbContexts
                 .RuleFor(m => m.Name, f => f.Person.FullName)
                 .RuleFor(m => m.Identification, f => f.Person.Sin())
                 .RuleFor(m => m.Phone, f => f.Phone.PhoneNumber())
-                .RuleFor(m => m.Password, f => "1234")
+                .RuleFor(m => m.Password, f => Encrypt.GetSHA256("123456"))
                 .RuleFor(m => m.RoleId, f => 2)
                 .RuleFor(m => m.Email, f => f.Person.Email);
 
