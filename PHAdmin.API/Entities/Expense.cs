@@ -17,9 +17,12 @@ namespace PHAdmin.API.Entities
 
         public string? Comments { get; set; }
 
+        public byte[]? Document { get; set; }
+
         [ForeignKey("ExpenseTypeId")]
         public ExpenseType? ExpenseType { get; set; }
         public int ExpenseTypeId { get; set; }
+        //public string ExpenseTypeName { get; set; } = string.Empty;
 
         [Required(ErrorMessage = "You should provide a creationdate value.")]
         public DateTime CreationDate { get; set; } = DateTime.Now;

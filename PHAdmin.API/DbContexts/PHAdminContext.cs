@@ -49,6 +49,46 @@ namespace PHAdmin.API.DbContexts
             // .HasDefaultValueSql("NULL");
 
             modelBuilder.Entity<Apartment>()
+               .Property(b => b.CreationDate)
+               .HasDefaultValueSql("getdate()");
+
+            modelBuilder.Entity<Expense>()
+              .Property(b => b.CreationDate)
+              .HasDefaultValueSql("getdate()");
+
+            modelBuilder.Entity<User>()
+              .Property(b => b.CreationDate)
+              .HasDefaultValueSql("getdate()");
+
+            modelBuilder.Entity<Payment>()
+              .Property(b => b.CreationDate)
+              .HasDefaultValueSql("getdate()");
+
+            modelBuilder.Entity<Debt>()
+              .Property(b => b.CreationDate)
+              .HasDefaultValueSql("getdate()");
+
+            modelBuilder.Entity<Apartment>()
+              .Property(b => b.Status)
+              .HasDefaultValue("A");
+
+            modelBuilder.Entity<Expense>()
+              .Property(b => b.Status)
+              .HasDefaultValue("A");
+
+            modelBuilder.Entity<User>()
+              .Property(b => b.Status)
+              .HasDefaultValue("A");
+
+            modelBuilder.Entity<Payment>()
+              .Property(b => b.Status)
+              .HasDefaultValue("A");
+
+            modelBuilder.Entity<Debt>()
+              .Property(b => b.Status)
+              .HasDefaultValue("A");
+
+            modelBuilder.Entity<Apartment>()
                .HasData(
                new Apartment(1,"A")
                {

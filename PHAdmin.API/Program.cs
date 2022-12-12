@@ -1,4 +1,6 @@
+using Microsoft.AspNetCore.Http.Features;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.FileProviders;
 using PHAdmin.API.DbContexts;
 using PHAdmin.API.Services;
 using Serilog;
@@ -18,7 +20,8 @@ builder.Host.UseSerilog();
 builder.Services.AddControllers(options =>
 {
     options.ReturnHttpNotAcceptable = true;
-}).AddXmlDataContractSerializerFormatters();
+}).AddNewtonsoftJson()
+  .AddXmlDataContractSerializerFormatters();
 
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -50,6 +53,13 @@ builder.Services.AddCors(options =>
     });
 });
 
+builder.Services.Configure<FormOptions>(o =>
+{
+    o.ValueLengthLimit = int.MaxValue;
+    o.MultipartBodyLengthLimit = int.MaxValue;
+    o.MemoryBufferThreshold = int.MaxValue;
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -60,6 +70,13 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseCors("PolicyToApp");
+
+app.UseStaticFiles();
+app.UseStaticFiles(new StaticFileOptions()
+{
+    FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), @"Resources")),
+    RequestPath = new PathString("/Resources")
+});
 
 app.UseHttpsRedirection();
 

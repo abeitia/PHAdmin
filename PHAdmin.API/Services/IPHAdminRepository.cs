@@ -1,4 +1,5 @@
 ﻿using PHAdmin.API.Entities;
+using PHAdmin.API.Models;
 
 namespace PHAdmin.API.Services
 {
@@ -19,7 +20,18 @@ namespace PHAdmin.API.Services
 
         Task<IEnumerable<Payment>> GetPaymentsAsync();
 
-        Task<IEnumerable<Expense>> GetExpensesAsync();
+        Task<IEnumerable<ExpenseDto>> GetExpensesAsync();
+       
+        Task<ExpenseDto?> GetExpenseAsync(int expenseId);
+        Task<Expense?> GetExpense2Async(int expenseId);
+
         Task<IEnumerable<Debt>> GetDebtsAsync();
+
+        void AddExpense(Expense expense);
+        void AddExpenseWithDocument(Expense expense);
+
+        Task<bool> SaveChangesAsync();
+
+        void DeleteExpense(Expense expense);
     }
 }
