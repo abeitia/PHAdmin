@@ -20,9 +20,11 @@ namespace PHAdmin.API.Services
 
         Task<IEnumerable<Payment>> GetPaymentsAsync();
 
-        Task<IEnumerable<ExpenseDto>> GetExpensesAsync();
-       
-        Task<ExpenseDto?> GetExpenseAsync(int expenseId);
+        //Task<IEnumerable<ExpenseDto>> GetExpensesAsync();
+        Task<IEnumerable<Expense>> GetExpensesAsync();
+
+        //Task<ExpenseDto?> GetExpenseAsync(int expenseId);
+        Task<Expense?> GetExpenseAsync(int expenseId);
         Task<Expense?> GetExpense2Async(int expenseId);
 
         Task<IEnumerable<Debt>> GetDebtsAsync();

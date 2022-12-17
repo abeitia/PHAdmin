@@ -15,6 +15,7 @@ namespace PHAdmin.API.Entities
         [Required]
         public decimal Amount { get; set; }
 
+        [MaxLength(1500)]
         public string? Comments { get; set; }
 
         [ForeignKey("UserId")]

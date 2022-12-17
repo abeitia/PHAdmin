@@ -49,16 +49,17 @@ namespace PHAdmin.API.Services
 
         public async Task<Expense?> GetExpense2Async(int expenseId)
         {
+            
             return await _context.Expenses
                 .Where(e => e.Id == expenseId).FirstOrDefaultAsync();
         }
 
-        public async Task<ExpenseDto?> GetExpenseAsync(int expenseId)
+        public async Task<Expense?> GetExpenseAsync(int expenseId)
         {
             return await _context.Expenses.Join(_context.ExpenseTypes,
                 e => e.ExpenseTypeId,
                 et => et.Id,
-                (e, et) => new ExpenseDto
+                (e, et) => new Expense
                 {
                     Id = e.Id,
                     ExpenseDate = e.ExpenseDate,
@@ -72,15 +73,53 @@ namespace PHAdmin.API.Services
                 .Where(e => e.Id == expenseId).FirstOrDefaultAsync();
         }
 
-       
 
-        public async Task<IEnumerable<ExpenseDto>> GetExpensesAsync()
+        //public async Task<ExpenseDto?> GetExpenseAsync(int expenseId)
+        //{
+        //    return await _context.Expenses.Join(_context.ExpenseTypes,
+        //        e => e.ExpenseTypeId,
+        //        et => et.Id,
+        //        (e, et) => new ExpenseDto
+        //        {
+        //            Id = e.Id,
+        //            ExpenseDate = e.ExpenseDate,
+        //            ExpenseTypeName = et.ExpenseName,
+        //            ExpenseTypeId = e.ExpenseTypeId,
+        //            Amount = e.Amount,
+        //            Comments = e.Comments,
+        //            CreationDate = e.CreationDate,
+        //            Status = e.Status
+        //        })
+        //        .Where(e => e.Id == expenseId).FirstOrDefaultAsync();
+        //}
+
+
+
+
+        //public async Task<IEnumerable<ExpenseDto>> GetExpensesAsync()
+        //{
+        //    //return await _context.Expenses.OrderBy(e => e.Id).ToListAsync();
+        //    return await _context.Expenses.Join(_context.ExpenseTypes,
+        //        e => e.ExpenseTypeId,
+        //        et => et.Id,
+        //        (e, et) => new ExpenseDto
+        //        {
+        //            Id = e.Id,
+        //            ExpenseDate = e.ExpenseDate,
+        //            ExpenseTypeName = et.ExpenseName,
+        //            ExpenseTypeId = e.ExpenseTypeId,
+        //            Amount = e.Amount,
+        //            Comments = e.Comments,
+        //            CreationDate  = e.CreationDate,
+        //       
+
+        public async Task<IEnumerable<Expense>> GetExpensesAsync()
         {
             //return await _context.Expenses.OrderBy(e => e.Id).ToListAsync();
             return await _context.Expenses.Join(_context.ExpenseTypes,
                 e => e.ExpenseTypeId,
                 et => et.Id,
-                (e, et) => new ExpenseDto
+                (e, et) => new Expense
                 {
                     Id = e.Id,
                     ExpenseDate = e.ExpenseDate,
@@ -88,7 +127,7 @@ namespace PHAdmin.API.Services
                     ExpenseTypeId = e.ExpenseTypeId,
                     Amount = e.Amount,
                     Comments = e.Comments,
-                    CreationDate  = e.CreationDate,
+                    CreationDate = e.CreationDate,
                     Status = e.Status
                 }).Where(e => e.Status == "A").ToListAsync();
 

@@ -22,7 +22,7 @@ namespace PHAdmin.API.Controllers
         public async Task<ActionResult<IEnumerable<DebtDto>>> GetDebts()
         {
             var debtEntities = await _phAdminRepository.GetDebtsAsync();
-            return Ok(_mapper.Map<IEnumerable<ExpenseDto>>(debtEntities));
+            return Ok(_mapper.Map<IEnumerable<DebtDto>>(debtEntities));
         }
     }
 }

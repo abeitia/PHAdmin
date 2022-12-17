@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Http.Features;
+using Microsoft.AspNetCore.StaticFiles;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.FileProviders;
 using PHAdmin.API.DbContexts;
@@ -27,6 +28,7 @@ builder.Services.AddControllers(options =>
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddSingleton<FileExtensionContentTypeProvider>();
 
 #if DEBUG
 builder.Services.AddTransient<IMailService, LocalMailService>();

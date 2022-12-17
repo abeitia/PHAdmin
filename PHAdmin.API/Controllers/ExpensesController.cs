@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.Mvc;
 using PHAdmin.API.Entities;
 using Newtonsoft.Json;
 using Microsoft.Extensions.Hosting.Internal;
+using Microsoft.AspNetCore.StaticFiles;
+using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace PHAdmin.API.Controllers
 {
@@ -18,12 +20,17 @@ namespace PHAdmin.API.Controllers
         private readonly IPHAdminRepository _phAdminRepository;
         private readonly IMapper _mapper;
         private readonly IWebHostEnvironment _environment;
+        private readonly FileExtensionContentTypeProvider _fileExtensionContentTypeProvider;
 
-        public ExpensesController(IPHAdminRepository phAdminRepository, IMapper mapper, IWebHostEnvironment environment)
+        public ExpensesController(IPHAdminRepository phAdminRepository,
+            IMapper mapper,
+            IWebHostEnvironment environment,
+            FileExtensionContentTypeProvider fileExtensionContentTypeProvider)
         {
             _phAdminRepository = phAdminRepository ?? throw new ArgumentNullException(nameof(phAdminRepository));
             _mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));
             _environment = environment ?? throw new ArgumentNullException(nameof(environment));
+            _fileExtensionContentTypeProvider = fileExtensionContentTypeProvider ?? throw new System.ArgumentNullException(nameof(fileExtensionContentTypeProvider));
         }
 
         [HttpGet()]
@@ -49,7 +56,7 @@ namespace PHAdmin.API.Controllers
         [HttpPatch("{id}")]
         public async Task<ActionResult> DeleteExpense(
             int id,
-            JsonPatchDocument<ExpenseForCreationDto> patchDocument)
+            JsonPatchDocument<ExpenseForUpdateDto> patchDocument)
         {
             
 
@@ -59,7 +66,7 @@ namespace PHAdmin.API.Controllers
                 return NotFound();
             }
 
-            var expenseToPatch = _mapper.Map<ExpenseForCreationDto>(
+            var expenseToPatch = _mapper.Map<ExpenseForUpdateDto>(
                 expenseEntity);
 
             patchDocument.ApplyTo(expenseToPatch, ModelState);
@@ -101,6 +108,53 @@ namespace PHAdmin.API.Controllers
             return NoContent();
         }
 
+        [HttpGet("file/{expenseId}")]
+        public async Task<ActionResult> GetFile(int expenseId)
+        {
+            var expense = await _phAdminRepository.GetExpense2Async(expenseId);
+            
+            if (expense.Document == null)
+            { return NotFound(); };
+
+            var docBytes= GetFileBytes(Convert.ToBase64String(expense.Document));
+
+            if (!_fileExtensionContentTypeProvider.TryGetContentType(
+                expense.DocumentName, out var contentType))
+            {
+                contentType = "application/octet-stream";
+            }
+
+            return File(docBytes, contentType, expense.DocumentName);
+
+            //var pathToFile = "getting-started-with-rest-slides.pdf";
+
+            //// check whether the file exists
+            //if (!System.IO.File.Exists(pathToFile))
+            //{
+            //    return NotFound();
+            //}
+
+            //if (!_fileExtensionContentTypeProvider.TryGetContentType(
+            //    pathToFile, out var contentType))
+            //{
+            //    contentType = "application/octet-stream";
+            //}
+
+            //var bytes = System.IO.File.ReadAllBytes(pathToFile);
+            //return File(bytes, contentType, Path.GetFileName(pathToFile));
+        }
+
+        private byte[] GetFileBytes(string sBase64String)
+        {
+            byte[] bytes = null;
+            if (!string.IsNullOrEmpty(sBase64String))
+            {
+                bytes = Convert.FromBase64String(sBase64String);
+            }
+            return bytes;
+            
+        }
+
         [HttpPost()]
         public async Task<ActionResult<ExpenseDto>> CreateExpense(ExpenseForCreationDto expense)
         {
@@ -116,6 +170,7 @@ namespace PHAdmin.API.Controllers
                 {
                     byte[] byteArray = System.IO.File.ReadAllBytes(myPath);
                     finalExpense.Document = byteArray;
+                    finalExpense.DocumentName = Path.GetFileName(myPath);
                 }
             }
 

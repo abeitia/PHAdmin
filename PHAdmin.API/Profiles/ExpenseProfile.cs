@@ -15,6 +15,7 @@ namespace PHAdmin.API.Profiles
 
             CreateMap<Entities.Expense, Models.ExpenseDto>();
             CreateMap<Entities.Expense, Models.ExpenseForCreationDto>();
+            CreateMap<Entities.Expense, Models.ExpenseForUpdateDto>().ReverseMap(); 
         }
     }
 }

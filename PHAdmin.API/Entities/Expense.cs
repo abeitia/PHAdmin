@@ -15,14 +15,21 @@ namespace PHAdmin.API.Entities
         [Required]
         public decimal Amount { get; set; }
 
+        [MaxLength(1500)]
         public string? Comments { get; set; }
 
         public byte[]? Document { get; set; }
 
+        //[StringLength(255)]
+        [MaxLength(255)]
+        public string? DocumentName { get; set; }
+
         [ForeignKey("ExpenseTypeId")]
         public ExpenseType? ExpenseType { get; set; }
         public int ExpenseTypeId { get; set; }
-        //public string ExpenseTypeName { get; set; } = string.Empty;
+
+        [NotMapped]
+        public string ExpenseTypeName { get; set; } = string.Empty;
 
         [Required(ErrorMessage = "You should provide a creationdate value.")]
         public DateTime CreationDate { get; set; } = DateTime.Now;

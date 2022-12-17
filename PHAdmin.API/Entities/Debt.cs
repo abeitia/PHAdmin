@@ -27,6 +27,7 @@ namespace PHAdmin.API.Entities
         [Required]
         public decimal AmountPaid { get; set; } = 0;
 
+        [MaxLength(1500)]
         public string? Comments { get; set; }
 
        
